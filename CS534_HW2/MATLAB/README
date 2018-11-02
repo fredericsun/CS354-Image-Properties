@@ -1,0 +1,9 @@
+1. In "hw2_walkthrough1.m", I set the k value to 9.1 in both dilation and erosion. I have no reference of the value I set. I just test possible values until there is no hole and rice in the image.
+
+2. I do not introduce any other features of image besides roundness. Use roundness only to complete recognition process.
+
+3. For all the three object images(two_objects.png, many_objects_1.png and many_objects_2.png), I set the threshold to 0.5 in generating labeled images('threshold_list = [0.5, 0.5, 0.5]).
+
+4. I set the length of the segment line of annotated image.
+
+5. In "recognizeObjects.m", I use the quotient of two roundness value(one is target object and the other one is model object) as the criteria of recognizing two objects. I tested to define the accepted range of quotient as [0.94, 1.06] where the quotient falls in can generate correct recognition results. 
